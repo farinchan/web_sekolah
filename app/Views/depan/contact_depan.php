@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 
-<main id="main">
+<main id="main" class="mt-5 pt-5">
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">

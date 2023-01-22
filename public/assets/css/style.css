@@ -128,7 +128,7 @@ h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: #fff;
-  height: 40px;
+  height: 100px;
   font-size: 14px;
   transition: all 0.5s;
   z-index: 996;
@@ -145,7 +145,7 @@ h6 {
 }
 
 #topbar .contact-info a:hover {
-  color: #1977cc;
+  color: #3ac162;
 }
 
 #topbar .contact-info i {
@@ -168,7 +168,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #1977cc;
+  color: #3ac162;
 }
 
 #topbar .social-links a:first-child {
@@ -186,7 +186,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  top: 100px;
   box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
 }
 

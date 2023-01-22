@@ -38,16 +38,20 @@
 
 <body>
     <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div id="topbar" class="fixed-top">
         <div class="container d-flex justify-content-between">
-            <div class="contact-info d-flex align-items-center">
-                <img src="image/ikhlas-beramal.png" alt="gg gaming" width="30">
-                <a href="mailto:contact@example.com">contact@example.com</a>
-                <i class="bi bi-phone"></i> +1 5589 55488 55
+            <div class="px-5 pt-2  contact-info d-flex align-items-center">
+                <div>
+                    <img src="image/ikhlas-beramal.png" alt="gg gaming" width="80">
+                </div>
+                <div>
+                    <h1 class="px-3 my-0"><a href="index.html">MAN 4 Medan</a></h1>
+                    <p class="px-3 my-0">SMK UNGGULAN YANG MENGHASILKAN SDM BERMUTU DAN BERDAYA SAING TINGGI</p>
+                </div>
             </div>
             <div class="d-none d-lg-flex social-links align-items-center">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-fa cebook"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
             </div>
@@ -57,7 +61,7 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+            <!-- <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1> -->
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 

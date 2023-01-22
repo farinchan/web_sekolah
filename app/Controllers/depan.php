@@ -27,4 +27,12 @@ class Depan extends BaseController
         ];
         return view('depan/guru_depan', $config);
     }
+
+    public function Contact()
+    {
+        $config = [
+            "title" => "Contact"
+        ];
+        return view('depan/contact_depan', $config);
+    }
 }

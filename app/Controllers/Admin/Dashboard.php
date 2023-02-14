@@ -8,6 +8,9 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        //
+        $config = [
+            "active" => "dashboard"
+        ];
+        return view("admin/dashboard", $config);
     }
 }

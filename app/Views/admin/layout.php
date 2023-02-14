@@ -151,72 +151,99 @@
               </a>
             </li>
 
-            <!-- Layouts -->
+            <!-- Berita -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Layouts</div>
+                <div data-i18n="Layouts">Berita</div>
               </a>
-
               <ul class="menu-sub">
                 <li class="menu-item">
                   <a href="layouts-without-menu.html" class="menu-link">
-                    <div data-i18n="Without menu">Without menu</div>
+                    <div data-i18n="Without menu">Kategori</div>
                   </a>
                 </li>
-                
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Article</div>
+                  </a>
+                </li>
+              </ul>
+            </li>          
+        
+            <!-- Guru -->
+            <li class="menu-item">
+              <a href="tables-basic.html" class="menu-link">
+              <i class='menu-icon tf-icons bx bxs-graduation' ></i>
+                <div data-i18n="Guru">Data Guru</div>
+              </a>
+            </li>
+
+            <!-- Agenda -->
+            <li class="menu-item">
+              <a href="tables-basic.html" class="menu-link">
+              <i class='menu-icon tf-icons bx bx-notepad' ></i>
+                <div data-i18n="Agenda">Agenda</div>
+              </a>
+            </li>
+
+            <!-- Pengumuman -->
+            <li class="menu-item">
+              <a href="tables-basic.html" class="menu-link">
+              <i class='menu-icon tf-icons bx bxs-megaphone' ></i>
+                <div data-i18n="Pengumuman">Pengumuman</div>
+              </a>
+            </li>
+
+            <!-- Download -->
+            <li class="menu-item">
+              <a href="tables-basic.html" class="menu-link">
+              <i class='menu-icon tf-icons bx bx-cloud-download'></i>
+                <div data-i18n="Download">Download</div>
+              </a>
+            </li>
+
+            <!-- Galeri -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class='menu-icon tf-icons bx bx-photo-album' ></i>
+                <div data-i18n="Galeri">Galeri</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Album</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Photo</div>
+                  </a>
+                </li>
               </ul>
             </li>
 
-             <!-- Blog -->
-             <li class="menu-header small text-uppercase"><span class="menu-header-text">BLOG</span></li>            
-            <!-- Kategori -->
-            <li class="menu-item <?= $active == "kategoriBlog" ? "active" : "" ?>">
-              <a href="/admin/kategoriBlog" class="menu-link">
-              <i class='menu-icon tf-icons bx bx-category'></i>
-                <div data-i18n="category">Kategori</div>
-              </a>
-            </li>
-             <!-- Article -->
-             <li class="menu-item <?= $active == "artikel" ? "active" : "" ?>">
-              <a href="/admin/artikel" class="menu-link">
-              <i class='menu-icon tf-icons bx bx-news' ></i>
-                <div data-i18n="article">Article</div>
-              </a>
-            </li>
-
-          
-            
-            <!-- Projects -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Project</span></li>
-            <!-- Open Source Project -->
-            <li class="menu-item <?= $active == "Open Source Project" ? "active" : "" ?>">
-              <a href="tables-basic.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-table"></i>
-                <div data-i18n="project">Open Source Project</div>
-              </a>
-            </li>
-            <!-- Project -->
+            <!-- Inbox -->
             <li class="menu-item">
               <a href="tables-basic.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-table"></i>
-                <div data-i18n="Project">Project</div>
+              <i class='menu-icon tf-icons bx bx-envelope' ></i>
+                <div data-i18n="Inbox">Inbox</div>
               </a>
             </li>
 
 
             <!-- Misc -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Administrator</span></li>
             <li class="menu-item">
-              <a href="/admin/mail" class="menu-link">
-              <i class='menu-icon tf-icons bx bx-envelope' ></i>
-                <div data-i18n="Mail">Mail</div>
+              <a href="" class="menu-link">
+              <i class='menu-icon tf-icons bx bx-user'></i>
+                <div data-i18n="User">User</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="admin/support" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-support"></i>
-                <div data-i18n="Support">Support</div>
+              <a href="" class="menu-link">
+              <i class='menu-icon tf-icons bx bx-cog' ></i>
+                <div data-i18n="Setting">Setting</div>
               </a>
             </li>
             

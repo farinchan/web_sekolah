@@ -61,7 +61,7 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <!-- <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1> -->
+            <h1 class="logo me-auto"><a href="index.html"></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -69,7 +69,6 @@
                 <ul>
                     <li><a class="<?= $title == "Beranda" ? "active" : "" ?>" href="/">Beranda</a></li>
                     <li><a class="<?= $title == "about" ? "active" : "" ?>" href="/about">About</a></li>
-                    <li><a class="<?= $title == "guru" ? "active" : "" ?>" href="/guru">Guru</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/pengumuman">Pengumuman</a></li>
                     <li><a href="/agenda">Agenda</a></li>
@@ -81,7 +80,7 @@
                             <li><a href="#">Sambutan Kepala Sekloah</a></li>
                             <li><a href="#">Visi dan Misi</a></li>
                             <li><a href="#">Struktur Organisasi</a></li>
-                            <li><a href="#">Citivas Akademika</a></li>
+                            <li><a href="/guru">Citivas Akademika</a></li>
                         </ul>
                     </li>
                     <li><a class="<?= $title == "contact" ? "active" : "" ?>" href="/contact">Contact</a></li>

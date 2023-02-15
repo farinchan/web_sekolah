@@ -40,6 +40,16 @@ class Berita extends BaseController
         return redirect()->to('/admin/berita/kategori');
     }
 
+    public function editKategori($id)
+    {
+        $this->Kategori->update($id, [
+            'name' => $this->request->getVar('nama'),
+            'slug' => slugify($this->request->getVar('nama')),
+        ]);
+        session()->setFlashdata('hapus', 'Data Telah Berhasil di Edit');
+        return redirect()->to('/admin/berita/kategori');
+    }
+
     public function hapusKategori($id)
     {
         $this->Kategori->delete($id);
@@ -78,14 +88,14 @@ class Berita extends BaseController
             'judul' => $this->request->getVar('judul'),
             'isi' => $this->request->getVar('editor1'),
             'kategori_id' => $this->request->getVar('kategori'),
-            'gambar' => $thumb->getName(),
+            'thumbnail' => $thumb->getName(),
             'user_id' => $session->get("user_id"),
             'author' => $session->get("user_name"),
             'slug' => slugify($this->request->getVar('judul')),
             'meta_description' => $this->request->getVar('deskripsi'),
         ]);
         session()->setFlashdata('pesan', 'Data Telah Berhasil di Simpan');
-        return redirect()->to('/admin/artikel');
+        return redirect()->to('/admin/berita/artikel');
     }
 
     public function hapusartikel($id)

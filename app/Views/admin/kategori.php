@@ -46,7 +46,7 @@
                     </thead>
                     <tbody class="table-border-bottom-0">
                         <?php $no = 1; ?>
-                        <?php foreach ($objek as $r) : ?>
+                        <?php foreach ($Kategori as $r) : ?>
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong><?= htmlentities($r['name']) ?></strong></td>

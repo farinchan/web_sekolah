@@ -41,6 +41,8 @@ $routes->get('/guru', 'Depan::guru');
 $routes->get('/contact', 'Depan::contact');
 
 $routes->get('/admin/dashboard', 'Admin\Dashboard::index', ['filter' => 'auth']);
+$routes->get('/admin/berita/kategori', 'Admin\berita::kategori', ['filter' => 'auth']);
+$routes->get('/admin/dashboard', 'Admin\Dashboard::index', ['filter' => 'auth']);
 
 // $routes->get('/admin/berita/kategori', 'Admin\Berita::kategori');
 

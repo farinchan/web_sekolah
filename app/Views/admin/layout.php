@@ -61,7 +61,11 @@
     <script src="<?= base_url() ?>/admin/assets/vendor/js/helpers.js"></script>
 
     <!-- CKeditor -->
-    <script src="//cdn.ckeditor.com/4.20.1/full/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.20.1/full/ckeditor.js"></script>
+
+    <!-- DataTable -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css">
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
@@ -159,13 +163,18 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
+                  <a href="/admin/berita/kategori" class="menu-link">
                     <div data-i18n="Without menu">Kategori</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
-                    <div data-i18n="Without menu">Article</div>
+                  <a href="/admin/berita/artikel" class="menu-link">
+                    <div data-i18n="Without menu">List Atikel</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="/admin/berita/tambahartikel" class="menu-link">
+                    <div data-i18n="Without menu">Tambah Artikel</div>
                   </a>
                 </li>
               </ul>
@@ -443,6 +452,11 @@
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
+     <!-- DATATABLE -->
+     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+
     <script>
       function ImgPreview() {
         const thumb = document.querySelector('#thumb')
@@ -457,5 +471,11 @@
       }
 
     </script>
+    <script>
+      $(document).ready(function() {
+          $('#example').DataTable();
+      });
+    </script>
+    
   </body>
 </html>

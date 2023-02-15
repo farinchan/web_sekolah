@@ -68,7 +68,6 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="<?= $title == "Beranda" ? "active" : "" ?>" href="/">Beranda</a></li>
-                    <li><a class="<?= $title == "about" ? "active" : "" ?>" href="/about">About</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/pengumuman">Pengumuman</a></li>
                     <li><a href="/agenda">Agenda</a></li>
@@ -77,7 +76,7 @@
 
                     <li class="dropdown"><a href="#"><span>Profil Sekolah</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Sambutan Kepala Sekloah</a></li>
+                            <li><a href="/about">Sambutan Kepala Sekloah</a></li>
                             <li><a href="#">Visi dan Misi</a></li>
                             <li><a href="#">Struktur Organisasi</a></li>
                             <li><a href="/guru">Citivas Akademika</a></li>

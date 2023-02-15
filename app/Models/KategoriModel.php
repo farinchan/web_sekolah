@@ -9,5 +9,5 @@ class KategoriModel extends Model
     protected $table            = 'kategori';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $allowedFields    = ['id', 'name', 'createdAt'];
+    protected $allowedFields    = ['id', 'name', 'slug', 'createdAt'];
 }

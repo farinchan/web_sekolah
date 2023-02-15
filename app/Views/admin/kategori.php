@@ -60,10 +60,12 @@
                                         </button>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal<?= $r['id']; ?>"><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                                            <a class="dropdown-item" href="/admin/KategoriBlog/delete/<?= $r['id']; ?>"><i class="bx bx-trash me-1"></i> Delete</a>
+                                            <a class="dropdown-item" href="/admin/berita/hapuskategori/<?= $r['id']; ?>"><i class="bx bx-trash me-1"></i> Delete</a>
                                         </div>
                                     </div>
                                 </td>
+
+                                <!-- ==== For Modal Sho ==== -->
                                 <div class="modal fade" id="exampleModal<?= $r['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -71,7 +73,7 @@
                                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <form method="post" action="/admin/kategoriBlog/saveEdit/<?= $r['id']; ?>">
+                                            <form method="post" action="/admin/berita/editartikel/<?= $r['id']; ?>">
                                                 <?= csrf_field() ?>
                                                 <div class="modal-body">
                                                     <div class="row mb-3">
@@ -90,6 +92,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- ==== End Modal Sho ==== -->
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

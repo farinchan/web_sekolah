@@ -32,10 +32,9 @@ class Berita extends BaseController
 
     public function tambahKategori()
     {
-        $slug = strtolower(trim(str_replace('/[^A-Za-z0-9-]+/', '-', $this->request->getVar('nama'))));
         $this->Kategori->save([
             'name' => $this->request->getVar('nama'),
-            'slug' => $slug,
+            'slug' => slugify($this->request->getVar('nama')),
         ]);
         session()->setFlashdata('pesan', 'Data Telah Berhasil di Simpan');
         return redirect()->to('/admin/berita/kategori');
@@ -69,10 +68,50 @@ class Berita extends BaseController
         return view("admin/artikel_tambah", $data);
     }
 
+    public function saveartikel()
+    {
+        $thumb = $this->request->getFile("thumb");
+        $thumb->move("thumbnail");
+
+        $session = session();
+        $this->Artikel->save([
+            'judul' => $this->request->getVar('judul'),
+            'isi' => $this->request->getVar('editor1'),
+            'kategori_id' => $this->request->getVar('kategori'),
+            'gambar' => $thumb->getName(),
+            'user_id' => $session->get("user_id"),
+            'author' => $session->get("user_name"),
+            'slug' => slugify($this->request->getVar('judul')),
+            'meta_description' => $this->request->getVar('deskripsi'),
+        ]);
+        session()->setFlashdata('pesan', 'Data Telah Berhasil di Simpan');
+        return redirect()->to('/admin/artikel');
+    }
+
     public function hapusartikel($id)
     {
         $this->Kategori->delete($id);
         session()->setFlashdata('hapus', 'Data Telah Berhasil di Hapus');
         return redirect()->to('/admin/berita/kategori');
     }
+}
+
+function slugify($text, string $divider = '-')
+{
+    // replace non letter or digits by divider
+    $text = preg_replace('~[^\pL\d]+~u', $divider, $text);
+    // transliterate
+    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+    // remove unwanted characters
+    $text = preg_replace('~[^-\w]+~', '', $text);
+    // trim
+    $text = trim($text, $divider);
+    // remove duplicate divider
+    $text = preg_replace('~-+~', $divider, $text);
+    // lowercase
+    $text = strtolower($text);
+    if (empty($text)) {
+        return 'n-a';
+    }
+    return $text;
 }

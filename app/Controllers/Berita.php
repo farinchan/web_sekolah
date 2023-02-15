@@ -30,6 +30,9 @@ class Berita extends BaseController
         session()->setFlashdata('pesan', 'Data Telah Berhasil di Simpan');
         return redirect()->to('/admin/berita/kategori');
     }
+
+    
+
     public function hapusKategori($id)
     {
         $this->Objek->delete($id);

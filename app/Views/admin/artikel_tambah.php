@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <div class="container-xxl flex-grow-1 container-p-y">
-    <form method="post" action="/admin/artikel/save" enctype="multipart/form-data">
+    <form method="post" action="/admin/berita/saveartikel" enctype="multipart/form-data">
         <div class="card mb-4">
             <div class="card-header d-flex align-items-center justify-content-between">
                 <h5 class="mb-0">Buat Artikel</h5>

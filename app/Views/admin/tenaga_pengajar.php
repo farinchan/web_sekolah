@@ -7,9 +7,9 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5>Post Berita</h5>
+                    <h5>Tenaga Pengajar</h5>
                     <a href="/admin/artikel/tambah" class="btn btn-primary mb-3">
-                        <span class="tf-icons bx bx-book-add"></span>&nbsp; Tambah Artikel
+                        <span class="tf-icons bx bx-book-add"></span>&nbsp; Tambah Tenaga Pengajar
                     </a>
                 </div>
                 <div class="card-body">
@@ -17,22 +17,28 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Judul</th>
-                                <th>Penulis</th>
-                                <th>Tanggal</th>
-                                <th>View</th>
-                                <th>Action</th>
+                                <th>NIP</th>
+                                <th>Nama</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Tempat Lahir</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Mata Pelajaran</th>
+                                <th>Foto</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1 ?>
-                            <?php foreach ($artikel as $item) : ?>
+                            <?php foreach ($TenagaPengajar as $item) : ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
-                                    <td><?= $item["judul"] ?></td>
-                                    <td><?= $item["author"] ?></td>
-                                    <td><?= $item["tanggal"] ?></td>
-                                    <td><?= $item["views"] ?></td>
+                                    <td><?= $item["nip"] ?></td>
+                                    <td><?= $item["nama"] ?></td>
+                                    <td><?= $item["jenis_kelamin"] ?></td>
+                                    <td><?= $item["tempat_lahir"] ?></td>
+                                    <td><?= $item["tanggal_lahir"] ?></td>
+                                    <td><?= $item["mata_pelajaran"] ?></td>
+                                    <td><?= $item["foto"] ?></td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="First group">
                                             <a type="button" class="btn btn-outline-secondary">
@@ -50,16 +56,6 @@
                             <?php endforeach ?>
 
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>

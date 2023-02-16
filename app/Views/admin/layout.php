@@ -180,11 +180,11 @@
               </ul>
             </li>          
         
-            <!-- Guru -->
+            <!-- Tenaga Pengajar -->
             <li class="menu-item">
-              <a href="tables-basic.html" class="menu-link">
+              <a href="/admin/tenagapengajar" class="menu-link">
               <i class='menu-icon tf-icons bx bxs-graduation' ></i>
-                <div data-i18n="Guru">Data Guru</div>
+                <div data-i18n="Guru">Tenaga Pengajar</div>
               </a>
             </li>
 

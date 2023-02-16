@@ -3,7 +3,7 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
-use App\Models\TenagaPengajar as ModelsTenagaPengajar;
+use App\Models\TenagaPengajarModel;
 
 class TenagaPengajar extends BaseController
 {
@@ -11,7 +11,7 @@ class TenagaPengajar extends BaseController
     protected $TenagaPengajar;
     public function __construct()
     {
-        $this->TenagaPengajar = new ModelsTenagaPengajar();
+        $this->TenagaPengajar = new TenagaPengajarModel();
     }
 
     public function index()

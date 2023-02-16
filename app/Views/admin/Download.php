@@ -17,22 +17,22 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Judul</th>
-                                <th>Deskripsi</th>
+                                <th>File</th>
                                 <th>Tanggal Post</th>
-                                <th>Author</th>
+                                <th>author</th>
+                                <th>Total Donwload</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1 ?>
-                            <?php foreach ($pengumuman as $item) : ?>
+                            <?php foreach ($download as $item) : ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
-                                    <td><?= $item["pengumuman_judul"] ?></td>
-                                    <td><?= $item["pengumuman_deskripsi"] ?></td>
-                                    <td><?= $item["pengumuman_tanggal"] ?> </td>
-                                    <td><?= $item["pengumuman_author"] ?></td>
+                                    <td><a href="/download/<?= $item["download_file"] ?>"> <?= $item["download_judul"] ?></a> </td>
+                                    <td><?= $item["download_tanggal"] ?></td>
+                                    <td><?= $item["download_author"] ?> </td>
+                                    <td><?= $item["download_total"] ?></td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="First group">
                                             <a type="button" class="btn btn-outline-secondary">

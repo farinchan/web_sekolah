@@ -206,7 +206,7 @@
 
             <!-- Download -->
             <li class="menu-item">
-              <a href="tables-basic.html" class="menu-link">
+              <a href="/admin/download" class="menu-link">
               <i class='menu-icon tf-icons bx bx-cloud-download'></i>
                 <div data-i18n="Download">Download</div>
               </a>

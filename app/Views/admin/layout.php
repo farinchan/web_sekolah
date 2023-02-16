@@ -190,7 +190,7 @@
 
             <!-- Agenda -->
             <li class="menu-item">
-              <a href="tables-basic.html" class="menu-link">
+              <a href="/admin/agenda" class="menu-link">
               <i class='menu-icon tf-icons bx bx-notepad' ></i>
                 <div data-i18n="Agenda">Agenda</div>
               </a>

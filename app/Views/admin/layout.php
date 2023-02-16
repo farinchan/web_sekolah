@@ -198,7 +198,7 @@
 
             <!-- Pengumuman -->
             <li class="menu-item">
-              <a href="tables-basic.html" class="menu-link">
+              <a href="/admin/pengumuman" class="menu-link">
               <i class='menu-icon tf-icons bx bxs-megaphone' ></i>
                 <div data-i18n="Pengumuman">Pengumuman</div>
               </a>
